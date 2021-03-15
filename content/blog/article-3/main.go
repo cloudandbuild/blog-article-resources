@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cloudandbuild/blog-article-resrouces/content/blog/article-3/ent"
+	"github.com/cloudandbuild/blog-article-resources/content/blog/article-3/ent"
 )
 
 func main() {

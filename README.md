@@ -1,1 +1,1 @@
-# blog-article-resrouces
+# blog-article-resources

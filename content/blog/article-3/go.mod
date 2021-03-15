@@ -1,4 +1,4 @@
-module github.com/cloudandbuild/blog-article-resrouces/content/blog/article-3
+module github.com/cloudandbuild/blog-article-resources/content/blog/article-3
 
 go 1.16
 
