@@ -1,7 +1,6 @@
-# example-development-k3d-skaffold
-This is a demo of a developing at local environment using k3s and skaffold.
+# k3dとskaffoldで始めるKubernetesローカル開発
+これは、k3dとskaffoldで始めるKubernetesローカル開発するチュートリアルです。
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/cloudandbuild/example-development-k3d-skaffold.git&cloudshell_tutorial=README.md)
 ## prerequisite
 
 - OS
