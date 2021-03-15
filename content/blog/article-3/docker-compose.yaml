@@ -1,0 +1,13 @@
+version: '2.2'
+services:
+  gremlin-server:
+    build: .
+    ports:
+      - 8182:8182
+    entrypoint: /docker-entrypoint.sh
+    command: ["conf/my-gremlin-server.yaml"]
+  gremlin-console:
+    image: tinkerpop/gremlin-console:3.4.6
+    tty: true
+    volumes:
+        - ./conf/client:/opt/gremlin/conf
