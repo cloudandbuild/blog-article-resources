@@ -4,7 +4,6 @@
 ## go generate
 ディレクトリを移動して、entのコードを自動生成します
 ```
-cd content/blog/article-3/
 go mod download
 go generate ./...
 ```
@@ -34,9 +33,5 @@ gremlin-serverに接続する。
 
 queryを実行する。
 ```
-gremlin> g.V().valueMap(true)
-==>{id=3c48f9e7-2ad0-403c-9398-96101b6d2cbf, label=user, name=[bob]}
-==>{id=cd3900cf-79fe-4bde-8a55-8c840ce9d8e3, label=user, name=[alice]}
-gremlin> g.E()
-==>e[e7ca2294-a11d-4ffc-8a98-22ef1196df47][cd3900cf-79fe-4bde-8a55-8c840ce9d8e3-user_friends->3c48f9e7-2ad0-403c-9398-96101b6d2cbf]
+g.V().valueMap(true)
 ```

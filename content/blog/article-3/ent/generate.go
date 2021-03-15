@@ -1,3 +1,4 @@
 package ent
 
-//go:generate go run entgo.io/ent/cmd/ent generate ./schema --storage gremlin --idtype string
+//go:generate go install entgo.io/ent/cmd/ent
+//go:generate ent generate ./schema --storage gremlin --idtype string
