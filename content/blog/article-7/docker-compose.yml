@@ -1,0 +1,36 @@
+version: "3.3"
+
+services:
+
+  traefik:
+    image: "traefik:v2.5"
+    container_name: "traefik"
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+  service-a:
+    image: nginx
+    volumes:
+      - ./service-a:/usr/share/nginx/html/service-a
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.service-a.rule=PathPrefix(`/service-a`)"
+      - "traefik.http.routers.service-a.entrypoints=web"
+
+  service-b:
+    image: nginx
+    volumes:
+      - ./service-b:/usr/share/nginx/html/service-b
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.service-b.rule=PathPrefix(`/service-b`)"
+      - "traefik.http.routers.service-b.entrypoints=web"
