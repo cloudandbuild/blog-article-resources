@@ -1,0 +1,18 @@
+{
+  "name": "ipx-cloudrun-fuse",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Narimasa Sakurai",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "h3": "^1.8.1",
+    "ipx": "^1.3.0"
+  }
+}
