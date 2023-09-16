@@ -1,5 +1,5 @@
 # ipx-cloudrun-fuse
-self-hosted image proxy on cloud run with fuse
+self-hosted image proxy on IPX on the Cloud Run with FUSE
 
 ## reference
 - [ipx](https://github.com/unjs/ipx)
